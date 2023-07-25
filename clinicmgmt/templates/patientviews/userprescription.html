@@ -1,0 +1,99 @@
+{% extends "layout/patient_layout.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block title %} {{company}} | precscription {% endblock %}
+
+{% block content %}
+
+<br>
+
+<div class="card">
+  <div class="card-header">
+    <h3 class="card-title">Patient Prescription</h3>
+      
+  </div>
+  <!-- /.card-header -->
+  <div class="card-body">
+
+    <section class="content container-fluidee">
+      <div id="printarea">
+        
+        
+   
+        <table id="example1" class="table table-bordered table-striped table-hover">
+                                
+            <thead>
+                
+            <tr>
+             
+              <th>Sr.No.</th>
+              
+              <th>UserName</th>
+              <th>Firestname</th>
+              <th>Lastname</th>
+              <th> Checkup_date</th>
+              <th>Mobile</th>
+              <th>gender</th>
+              <th>age</th>
+              <th>precscription</th> 
+            </tr>
+           
+            </thead>
+            <tbody>
+              {% for apo in Userdata %}
+             
+            <tr>
+            
+              <td>{{forloop.counter}}</td>
+              
+              <td>{{apo.patient}}</td>
+              <td>{{apo.fname}}</td>
+              <td>{{apo.lname}}</td>
+              <td>{{apo.Checkup_date}}</td>
+              <td>{{apo.mobile}}</td>
+              <td>{{apo.gender}}</td>
+              <td>{{apo.age}}</td>
+              <td>{{apo.precscription}}</td>
+              
+            </tr>
+            {% endfor %}
+      
+      
+      
+      
+      
+            </tbody>
+              <tfoot>
+            <tr>
+              
+              <th>Sr.No.</th>
+             
+              <th>UserName</th>
+              <th>Firestname</th>
+              <th>Lastname</th>
+              <th> Checkup_date</th>
+              <th>Mobile</th>
+              <th>gender</th>
+              <th>age</th>
+              <th>precscription</th> 
+            </tr>
+            </tfoot>  
+           
+          </table>
+   </div>
+  </section>
+
+  <br>
+  
+    
+
+
+  </div>
+  <!-- /.card-body -->
+</div>
+<!-- /.card -->
+
+     
+{% endblock %}
+
+

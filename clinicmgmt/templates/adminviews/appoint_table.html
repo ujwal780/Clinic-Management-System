@@ -1,0 +1,110 @@
+{% extends "layout/patient_layout.html"%}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block title%} {{company}} | Appointment Table {% endblock %}
+
+{% block content %}
+
+<br>
+
+<div class="card">
+  <div class="card-header">
+    <h3 class="card-title">Patient Appointments</h3>
+    
+  </div>
+  <!-- /.card-header -->
+  <div class="card-body">
+
+
+
+    <section class="content container-fluidee">
+      <div id="printarea">
+      
+    <table id="example1" class="table table-bordered table-striped table-hover">
+                                
+      <thead>
+        
+      <tr>
+       
+        <th>Sr.No.</th>
+        
+        <th>UserName</th>
+        <th>Patient Name</th>
+        <th>DOB</th>
+        <th>Gender</th>
+        <th>Appointment_date</th>
+        <th>Appointment_session</th>
+        <th>Patient Mobile</th>
+        <th>Message</th>
+      </tr>
+     
+      </thead>
+      <tbody>
+        {% for apo in appoint %}
+       
+      <tr>
+      
+        <td>{{forloop.counter}}</td>
+        
+        <td>{{apo.unname}}</td>
+        <td>{{apo.name}}</td>
+        <td>{{apo.dob}}</td>
+        <td>{{apo.gender}}</td>
+        <td>{{apo.appointment_date}}</td>
+        <td>{{apo.appointment_session}}</td>
+        <td>{{apo.mobile}}</td>
+        <td>{{apo.message}}</td>
+      </tr>
+      {% endfor %}
+
+
+
+
+
+      </tbody>
+        <tfoot>
+      <tr>
+        
+        <th>Sr.No.</th>
+       
+        <th>UserName</th>
+        <th>Patient Name</th>
+        <th>DOB</th>
+        <th>Gender</th>
+        <th>Appointment_date</th>
+        <th>Appointment_session</th>
+        <th>Patient Mobile</th>
+        <th>Message</th>
+      </tr>
+      </tfoot>  
+     
+    </table>
+   </div>
+  </section>
+
+  <br>
+  
+    <div>
+
+      <!-- <a href="#" class="btn btn-default btn-xs" data-toggle="tooltip" title="Print form"><i class="fa fa-print" onclick="PrintPreview()"></i></a> -->
+      <a href="#" >  <input type="button" class="btn btn-info" value="Print view"  onclick="PrintPreview()"/></a>
+        <a href="#" >  <input type="button" class="btn btn-info" value="Print preview"  onclick="PrintDoc()"/></a>
+   <a href="{% url 'export_appointment' %}" > <input type="button" class="btn btn-success" value="Export-Excel"/>  </a>
+   <!--<a href="#" > <input type="button" class="btn btn-danger" value="Delete All"/>  </a>-->
+   <form action="{%url 'deletedata' %}" method="POST" class="d-inline">
+    {% csrf_token %}
+     <input type="submit"class="btn btn-danger" value="Delete All">
+
+   </form>
+  </div>
+
+
+  </div>
+  <!-- /.card-body -->
+</div>
+<!-- /.card -->
+
+     
+{% endblock %}
+
+

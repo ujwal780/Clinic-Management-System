@@ -1,0 +1,244 @@
+{% extends "layout/Base_layout.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block title %} {{company}} | Index{% endblock %}
+
+{%block content%}
+
+
+<!-- Carousel Start -->
+<section class="content" style="background-image: url('{% static 'assets/dist/img/carousel/b.jpg'%}');">
+    <div class="container-fluid">
+          
+  
+  
+      <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="mask flex-center">
+              <div class="container">
+                <div class="row align-items-center">
+                  <div class="col-md-7 col-12 order-md-1 order-2">
+                    <h4> Book an appointment for an <br>in-clinic consultation</h4>
+                    <p>Instant appointment with doctors <br> </p>
+                     </div>
+                  <div class="col-md-5 col-12 order-md-2 order-1"><img src="{% static 'assets/dist/img/carousel/appoint.png' %}" class="mx-auto" alt="slide"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="mask flex-center">
+              <div class="container">
+                <div class="row align-items-center">
+                  <div class="col-md-7 col-12 order-md-1 order-2">
+                    <h4>Consult Your doctor online for any health concern</h4>
+                    <p>Health Checkups and Screenings For Diabetic,Cancer,Skin Care ,Kidney and Urine,Digestive Health,Sexual Health,Bones and Joints,Fever <br><i> Get health checkups from the comfort of your home. </i> </p>
+                     </div>
+                  <div class="col-md-5 col-12 order-md-2 order-1"><img src="{% static 'assets/dist/img/carousel/consult.png' %}" class="mx-auto" alt="slide"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="mask flex-center">
+              <div class="container">
+                <div class="row align-items-center">
+                  <div class="col-md-7 col-12 order-md-1 order-2">
+                    <h4>Diagnostic <br> Book Diagnostic Tests</h4>
+                    <p>Health Checkups and Screenings For Diabetic,Cancer,Skin Care ,Kidney and Urine,Digestive Health,Sexual Health,Bones and Joints,Fever <br><i> Get lab tests and full body checkups from the comfort of your home </i> </p>
+                     </div>
+                  <div class="col-md-5 col-12 order-md-2 order-1"><img src="{% static 'assets/dist/img/carousel/digno.png' %}" class="mx-auto" alt="slide"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="mask flex-center">
+              <div class="container">
+                <div class="row align-items-center">
+                  <div class="col-md-7 col-12 order-md-1 order-2">
+                    <h4>Pharmacy <br>
+                      Genuine Medicines </h4>
+                    <p>All medicines and health products are sourced from doctors trusted network of verified pharmacies and medical stores<br><i>Order Medicines & Health Products Online : India's most reliable Online Medical Store</i></p>
+                     </div>
+                  <div class="col-md-5 col-12 order-md-2 order-1"><img src="{% static 'assets/dist/img/carousel/pharma.png' %}" class="mx-auto" alt="slide"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="carousel-item">
+            <div class="mask flex-center">
+              <div class="container">
+                <div class="row align-items-center">
+                  <div class="col-md-7 col-12 order-md-1 order-2">
+                    <h4>Download Android App 
+                       </h4>
+                    <p>Connect your Doctor online via your smartphone</p>
+                     </div>
+                  <div class="col-md-5 col-12 order-md-2 order-1"><img src="{% static 'assets/dist/img/carousel/app.png' %}" class="mx-auto" alt="slide"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+    
+        </div>
+         
+      <!--slide end-->  
+  </div>
+  </section>
+  <!-- /.card -->
+   <!-- Carousel End -->
+
+
+<br>
+<!-- Contact Us -->
+
+<section class="content">
+ <div class="container-fluid">
+<div class="card default-card">
+    
+ <div class="card-body ">
+   <div class="row">
+     <div class="col-md-12">
+
+                    
+          <!-- ======= Contact Us Section ======= -->
+<section id="contact" class="contact">
+<div class="container">
+
+<div class="section-title">
+ <h1 style="text-align: center;color: #6b2014;">Visit Clinic</h1>
+ <p style="text-align: center;">Visit Clinic to full health checkup </p>
+</div>
+
+<div class="row">
+
+ <div class="col-lg-7 d-flex align-items-stretch" >
+   <div class="info">
+     <div class="address">
+         <i class="fa fa-map-marker" aria-hidden="true"></i>
+
+       <h4>Location:</h4>
+       <p>Karnik nagar solapur, Maharashtra 413003</p>
+     </div>
+
+     <div class="email">
+         <i class="fa fa-envelope" aria-hidden="true"></i>
+
+       <h4>Email:</h4>
+       <p>drclinic@gmail.com</p>
+     </div>
+
+     <div class="phone">
+         <i class="fa fa-phone fa-flip-horizontal" aria-hidden="true"></i>
+
+       <h4>Call:</h4>
+       <p>+91 1234567890</p>
+     </div>
+
+     <div class="embed-responsive embed-responsive-16by9">
+         
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3801.642742365313!2d75.9254388147074!3d17.667071787911578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc5db48eef0a109%3A0x92fdbc5178acef43!2sKarnik%20nagar%20society%20office!5e0!3m2!1sen!2sin!4v1623394373949!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>    
+    </div>
+    
+   </div>
+
+ </div>
+
+ <div class="col-lg-5 mt-5 mt-lg-0 d-flex align-items-stretch">
+<div class="php-email-form"> 
+<h4 style="text-align: center;color: #6b2014;">Visiting Hours</h4>
+<table class="redTable">
+<thead>
+<tr>
+<th>Day</th>
+<th>Morning</th>
+<th>Evening</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Monday</td>
+<td>11:00 AM - 01:00 PM</td>
+<td>05:00 PM - 09:00 PM</td>
+</tr>
+<tr>
+<td>Tuesday </td>
+<td>11:00 AM - 01:00 PM</td>
+<td>05:00 PM - 09:00 PM</td>
+</tr>
+<tr>
+<td>Wednesday </td>
+<td>11:00 AM - 01:00 PM</td>
+<td>05:00 PM - 09:00 PM</td>
+</tr>
+<tr>
+<td>Thursday </td>
+<td>11:00 AM - 01:00 PM</td>
+<td>05:00 PM - 09:00 PM</td>
+</tr>
+<tr>
+<td>Friday</td>
+<td>11:00 AM - 01:00 PM</td>
+<td>05:00 PM - 09:00 PM</td>
+</tr>
+<tr>
+ <td>Saturday </td>
+ <td>11:00 AM - 01:00 PM</td>
+ <td>05:00 PM - 09:00 PM</td>
+ </tr>
+</tbody>
+</table>
+<br>
+<div>
+<h4 style="text-align: center;color: #6b2014;"> Book an appointment for an in-clinic consultation</h4>
+<a href="{% url 'login' %}"><img src="{% static 'assets/dist/img/apntmnt/11.png'%}" style="width: 100%;height: auto;" data-toggle="modal" data-target="#modal-lg"/> </a>
+ 
+
+</div>
+</div>
+   
+ </div>
+
+</div>
+
+</div>
+</section><!-- End Contact Us Section -->
+
+
+     </div>
+     <!-- /.col -->
+ 
+     <!-- /.col -->
+   </div>
+   <!-- /.row -->
+ 
+ </div>
+ <!-- /.card-body -->
+
+ <div class="card-footer">
+   Visit <a href="#">Clinic </a>to full health checkup 
+   
+ </div>
+</div>
+</div>
+</section>
+<!-- /.card -->
+<!-- Contact Us End -->
+
+
+
+
+<br>
+
+
+ 
+
+
+ 
+
+{%endblock%}
