@@ -1,4 +1,3 @@
 # Clinic-Management-System
-
-Here patient can register himself and take appointment from doctor after this doctor can prescribe medicen and it will automatically came on patient account.
+ The clinic Management System has been developed to overcome the problems prevalling in the practicing manual system. This software is supported to eliminate and reduce the faced by the doctors and users. Moreover this system is designed for the particular need of doctors and hospitals to carry out operations in a smooth and effective manner. This application use an appointment to keep track on patient medical history. Doctors can have all the previous reports of all patients, which will help the doctors during the treatment.  
 Here we use python Django HTML CSS JavaScript Technology
